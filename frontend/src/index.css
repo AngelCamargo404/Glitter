@@ -7,13 +7,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.site-container {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titleClass {
+  color: rgb(253, 178, 190);;
+}
+
+.buttonClass {
+  background-color: rgb(241, 106, 129)!important;
+  border-color: rgb(248, 94, 120)!important;
+}
+
+.buttonClass:hover {
+  background-color: rgb(250, 124, 145);
+  border-color: rgb(249, 135, 154);
+}
+
+.buttonClass:active {
+  background-color: rgb(250, 124, 145)!important;
+  border-color: rgb(249, 135, 154)!important; 
+}
+
+main {
+  flex: 1;
+}
+
 header {
-  background-color: pink;
+  background-color: rgb(253, 178, 190);
+}
+
+main {
   padding: 1rem;
 }
 
-header a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rating span {
+  color: #ffc000;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 25rem;
+}
+
+.productInfo {
+  padding: 1rem;
+}
+
+.img-large {
+  max-width: 100%;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
 }
